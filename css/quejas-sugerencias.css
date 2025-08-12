@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form button, form input[type="submit"], form input[type="reset"] {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+form input[type="reset"] {
+  background-color: gray;
+}

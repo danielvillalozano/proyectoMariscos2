@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Platillo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="contenedor-logout">
+    <button id="btnLogout" class="btn-volver">Cerrar Sesión</button>
+  </div>
+
+  <h2>Editar Platillo</h2>
+
+  <form action="/editar-platillo" method="POST" id="formulario-productos">
+    <input type="hidden" id="txtIdProducto" name="idProducto">
+
+    <label for="nombre">Nombre del Platillo:</label><br>
+    <input type="text" id="txtNombre" name="nombre" required><br><br>
+
+    <label for="precio">Precio:</label><br>
+    <input type="number" id="txtPrecio" name="precio" min="0" step="0.01" required><br><br>
+
+    <label for="descripcion">Descripción:</label><br>
+    <textarea id="txtDescripcion" name="descripcion" rows="3" required></textarea><br><br>
+
+    <input type="submit" value="Guardar Cambios">
+  </form>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
