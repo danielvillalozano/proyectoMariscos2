@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Editar Platillo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/admin.css" />
 </head>
 <body>
   <div class="contenedor-logout">
@@ -16,7 +15,9 @@
   <div class="contenedor-principal">
     <div class="contenedor-formulario">
       <form id="formulario-productos">
-        <input type="hidden" id="txtIdProducto" name="idProducto" />
+        <label for="txtIdProducto">Numero de Producto:</label> <br>
+        <input id="txtIdProducto" name="idProducto" type="number" />
+        <br>
 
         <label for="txtNombre">Nombre del Platillo:</label><br />
         <input type="text" id="txtNombre" name="nombre" required /><br /><br />
@@ -53,7 +54,6 @@
             <th>ID producto</th>
             <th>Nombre</th>
             <th>Descripción</th>
-            <th>Categoría</th>
             <th>Precio</th>
             <th>Imagen</th>
           </tr>
@@ -66,4 +66,3 @@
   <script type="module" src="/js/main.js"></script>
 </body>
 </html>
-
